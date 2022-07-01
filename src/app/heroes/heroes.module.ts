@@ -10,6 +10,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 //material module
 import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ImagePipe } from './pipes/imagen.pipe';
 
 
 
@@ -20,13 +21,14 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HeroeComponent,
     HomeComponent,
     ListadoComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    ImagePipe
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     HeroesRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class HeroesModule { }
